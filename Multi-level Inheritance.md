@@ -46,3 +46,4 @@ obj.Salary(s)
 
 
 ### RESULT
+The program successfully receives the user’s name, age, and salary, and prints them using the class methods defined in the program.
