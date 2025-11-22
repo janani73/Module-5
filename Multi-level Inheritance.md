@@ -1,48 +1,48 @@
-# Exp.No:24  
-## Multi-level Inheritance
-
----
+# Exp.No:5d
+## Multi-level Inheritance - Displaying Personal Details Using Multiple Methods in a Python Class
 
 ### AIM  
-To write a Python program to get the name, age, and ID of a person and display them using multilevel inheritance.
-
----
-
+To write a Python program that uses a class with separate methods to print a person’s name, age, and salary.
 ### ALGORITHM
-
-1. Define the `Person` class:
-   - Inside the `Person` class, define the `__init__` method (constructor) with two parameters: `name` and `age`.
-   - Inside the `__init__` method, assign the `name` to `self.name` and `age` to `self.age`.
-
-2. Define the `PersonDetails` class that inherits from the `Person` class:
-   - Inside the `PersonDetails` class, define the `__init__` method (constructor) with three parameters: `name`, `age`, and `person_id`.
-   - Inside the `__init__` method, call the `__init__` method of the `Person` class using `super()` to initialize `name` and `age`.
-   - Assign `person_id` to `self.person_id`.
-
-3. Define the `DisplayDetails` class that inherits from the `PersonDetails` class:
-   - Inside the `DisplayDetails` class, define the `__init__` method (constructor) with three parameters: `name`, `age`, and `person_id`.
-   - Inside the `__init__` method, call the `__init__` method of the `PersonDetails` class using `super()` to initialize `name`, `age`, and `person_id`.
-
-4. Inside the `DisplayDetails` class, define the `show_details` method:
-   - Inside the `show_details` method, return a formatted string with `self.name`, `self.age`, and `self.person_id`.
-
-5. Prompt the user to enter `name` (string), `age` (integer), and `person_id` (integer).
-
-6. Create an instance `person` of the `DisplayDetails` class, passing `name`, `age`, and `person_id` to the constructor.
-
-7. Call the `show_details` method on the `person` object and print the result.
-
-8. Terminate the program.
-
----
+```
+1.Start the program.
+2.Define a class named name that contains three methods:
+  Name(self, n) to print the person’s name,
+  Age(self, a) to print the person’s age,
+  Salary(self, s) to print the person’s salary.
+3.Accept the person's name as string input from the user.
+4.Accept the age and convert it to an integer.
+5.Accept the salary and convert it to an integer.
+6.Create an object of the class name.
+7.Call the Name() method with the user-entered name.
+8.Call the Age() method with the age.
+9.Call the Salary() method with the salary.
+10.Display all the outputs in a single line.
+11.End the program.
+```
 
 ### PROGRAM
 
 ```
-
+class name():
+    def Name(self,n):
+        print(n,end=" ")
+    def Age(self,a):
+        print(a,end=" ")
+    def Salary(self,s):
+        print(s,end=" ")
+n=input()
+a=int(input())
+s=int(input())
+obj=name()
+obj.Name(n)
+obj.Age(a)
+obj.Salary(s)
 
 ```
 
 ### OUTPUT
+<img width="1210" height="320" alt="image" src="https://github.com/user-attachments/assets/803bc4e1-877e-4f93-8a69-7f5a62f06642" />
+
 
 ### RESULT
