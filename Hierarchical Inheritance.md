@@ -1,40 +1,38 @@
-# Exp.No:25  
-## Hierarchical Inheritance
+# Exp.No:5c
+## Hierarchical Inheritance - Employee Details Validation Using Tuple and Conditional Statement in Python
 
----
 
 ### AIM  
-To write a Python program to get the employee and doctor details and display them using hierarchical inheritance. Create a parent (base) class named `Details` and two child (derived) classes named `Employee` and `Doctor`.
-
----
+To write a Python program that accepts an employee ID and name, stores them as a tuple, and checks if the employee ID is valid based on a given condition.
 
 ### ALGORITHM
 
-1. **Begin the program.**
-2. **Create a class Details** with an `__init__` method to initialize three attributes: `id`, `name`, and `gender`.
-3. **Define a method display_details()** to print the values of `id`, `name`, and `gender`.
-4. **Create a class Employee** that inherits from the `Details` class. 
-   - Add two additional attributes: `company` and `department`.
-   - Override the `display_details()` method to print the employee-specific attributes (`company` and `department`) along with the inherited details.
-5. **Create a class Doctor** that also inherits from the `Details` class. 
-   - Add two additional attributes: `hospital` and `department`.
-   - Override the `display_details()` method to print the doctor-specific attributes (`hospital` and `department`) along with the inherited details.
-6. **Accept input** for employee and doctor details.
-7. **Create objects of Employee and Doctor** using the input.
-8. **Call the `display_details()` method** for both objects to print the details.
-9. **Terminate the program.**
-
----
-
+```
+1.Start the program.
+2.Accept an employee ID from the user and convert it to an integer.
+3.Accept the employee name as a string input.
+4.Create a tuple containing the employee ID and employee name.
+5.Print the tuple on the same line using end=' '.
+6.Check whether the employee ID is greater than 500000.
+7.If the condition is true, print "Valid Employee".
+8.If the condition is false, print "Invalid Employee".
+9.End the program.
+```
 ### PROGRAM
 ```
-
-
+emp_id=int(input())
+emp_name=input()
+print((emp_id,emp_name),end='  ')
+if emp_id > 500000:
+    print("Valid Employee")
+else:
+    print("Invalid Employee")
 ```
 
-### OUTPUT  
+### OUTPUT 
 
-(Output Screenshot)  
+<img width="1202" height="368" alt="image" src="https://github.com/user-attachments/assets/505cd972-a5d7-458a-9cf8-fcef49a682d8" />
 
 
 ### RESULT
+The program successfully reads employee details, stores them as a tuple, displays them, and classifies whether the employee is valid or invalid based on the employee ID.
